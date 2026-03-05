@@ -134,7 +134,7 @@ every '.ipynb' can be found in the notebooks folder
 
 **4. Launch interactive demo**
 ```bash
-python demo.ipynb
+# Run demo.ipynb
 ```
 ---
 
