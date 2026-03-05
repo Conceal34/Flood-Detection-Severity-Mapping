@@ -6,7 +6,7 @@
 ![IEEE](https://img.shields.io/badge/IEEE-Published%20Research-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
-> **IEEE Accepted Research Paper** — Presenting at IEEE Conference, Punjab, April 2026  
+> **IEEE Accepted Research Paper** — Presenting at IEEE Conference, April 2026  
 > *Satellite-Based Flood Detection Using Deep Learning and Probabilistic Mapping: A Case Study of Ganga Floodplain*
 
 A deep learning framework for automated flood detection and severity mapping from Sentinel-1 SAR satellite imagery using a U-Net based convolutional neural network. The model generates spatial flood probability maps and classifies affected regions into severity zones — designed as a decision-support tool for disaster response.
@@ -104,35 +104,18 @@ Output: Flood Probability Map  →  Shape: (1, 512, 512)
 
 ---
 
-## 🗂 Project Structure
-
-```
-Flood-Detection-SAR/
-│
-├── dataset_builder.ipynb         # Dataset parsing and preparation
-├── model_training.ipynb          # U-Net training and evaluation
-├── inference_and_prob_maps.ipynb # Flood probability map generation
-├── gradio_demo.py                # Interactive UI for flood prediction
-│
-├── models/                       # Saved trained model weights
-├── figures/                      # Sample outputs and probability maps
-└── README.md
-```
-
----
-
 ## 💻 Installation
 
 ```bash
-git clone https://github.com/Conceal34/flood-detection-sar.git
-cd flood-detection-sar
-
-pip install torch numpy rasterio matplotlib gradio
+git clone https://github.com/Conceal34/Flood-Detection-Severity-Mapping.git
+cd Flood-Detection-Severity-Mapping
 ```
 
 ---
 
 ## ▶ Running the Project
+
+every '.ipynb' can be found in the notebooks folder
 
 **1. Prepare the dataset**
 ```bash
@@ -151,10 +134,8 @@ pip install torch numpy rasterio matplotlib gradio
 
 **4. Launch interactive demo**
 ```bash
-python gradio_demo.py
+python demo.ipynb
 ```
-Upload a Sentinel-1 SAR image and view the predicted flood probability map in real-time.
-
 ---
 
 ## 🗺 Applications
@@ -171,8 +152,8 @@ Upload a Sentinel-1 SAR image and view the predicted flood probability map in re
 
 This implementation is part of an **IEEE accepted research paper**:
 
-> Vinner, Vandana Sharma. *"Satellite-Based Flood Detection Using Deep Learning and Probabilistic Mapping: A Case Study of Ganga Floodplain."*  
-> IEEE Conference, Punjab. Accepted February 2026. Presenting April 2026.
+> Vinner, Vandana Sharma, Prakash Velusamy. *"Satellite-Based Flood Detection Using Deep Learning and Probabilistic Mapping: A Case Study of Ganga Floodplain."*  
+> IEEE Conference. Accepted February 2026. Presenting April 2026.
 
 ---
 
@@ -183,14 +164,6 @@ This implementation is part of an **IEEE accepted research paper**:
 - Training on larger, more geographically diverse flood datasets
 - Real-time flood monitoring pipeline deployment
 - Socio-economic impact layer integration for severity assessment
-
----
-
-## 📚 References
-
-1. Ronneberger et al., *U-Net: Convolutional Networks for Biomedical Image Segmentation*, MICCAI, 2015.
-2. Schmitt et al., *SEN12-FLOOD: A SAR and multispectral dataset for flood detection*, IEEE DataPort, 2021.
-3. Jamali et al., *Residual Wave Vision U-Net for flood mapping using dual polarization Sentinel-1 SAR imagery*, 2024.
 
 ---
 
